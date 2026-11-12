@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Login | Joly Tea</title>
+<meta name="description" content="Joly Tea — milk tea khas dari Semarang.">
+<meta name="theme-color" content="#E07B39">
+<link rel="icon" href="img/favicon.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="site-header"><header class="site-header"><div class="container nav">
+<a class="brand" href="index.html"><img src="img/logo.png" alt="" width="44" height="44"><span>Joly Tea</span></a>
+<nav class="nav-links" aria-label="Navigasi utama"><a href="index.html" class="">Home</a><a href="menu.html" class="">Menu</a><a href="about.html" class="">About</a><a href="history.html" class="">Riwayat Transaksi</a><a href="profile.html" class="">Profil</a></nav>
+<div class="nav-right"><a class="cart-link" href="cart.html" aria-label="Keranjang belanja"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/><path d="M2 3h3l2.7 12.4a2 2 0 0 0 2 1.6h8.1a2 2 0 0 0 2-1.5L21.6 8H6"/></svg><span class="cart-badge" id="cart-badge" hidden>0</span></a>
+<button class="nav-toggle" id="nav-toggle" type="button" aria-label="Buka menu" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button></div>
+<div class="nav-auth" id="nav-auth"></div>
+</div></header></div>
+<main id="main">
+<div class="auth-wrap"><div class="card auth-card"><h1>Selamat Datang</h1><p class="muted">Login untuk melanjutkan pesananmu.</p>
+<div id="form-error" class="form-error" role="alert" hidden></div>
+<form id="login-form" novalidate>
+<div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required><div class="field-error"></div></div>
+<div class="field"><label for="password">Password</label><div class="pw-wrap"><input id="password" name="password" type="password" autocomplete="current-password" required><button type="button" data-toggle-pw="password">Tampilkan</button></div><div class="field-error"></div></div>
+<button class="btn btn-primary btn-block" type="submit">Login</button></form>
+<p class="switch">Belum punya akun? <a id="to-register" href="register.html">Register</a></p></div></div>
+</main>
+<div id="site-footer"><footer class="site-footer"><div class="container">
+<div class="footer-grid">
+<div><a class="brand" href="index.html"><img src="img/logo.png" alt="" width="44" height="44"><span>Joly Tea</span></a><p>Milk tea khas dari Semarang. Roasted Milk Tea dan Thai Tea dibuat segar untuk Anda.</p></div>
+<div><h4>Navigasi</h4><ul><li><a href="index.html">Home</a></li><li><a href="menu.html">Menu</a></li><li><a href="about.html">About</a></li><li><a href="history.html">Riwayat Transaksi</a></li><li><a href="profile.html">Profil</a></li><li><a href="cart.html">Keranjang</a></li></ul></div>
+<div><h4>Kontak &amp; Lokasi</h4><ul><li>Semarang, Jawa Tengah, Indonesia</li><li>WhatsApp: <a href="https://wa.me/6282219170718" target="_blank" rel="noopener">+62 822-1917-0718</a></li><li>Instagram: <a href="https://instagram.com/jolytea.smg" target="_blank" rel="noopener">@jolytea.smg</a></li></ul></div>
+</div>
+<div class="footer-bottom">&copy; 2026 Joly Tea. Semarang, Jawa Tengah.</div>
+</div></footer></div>
+<script src="js/app.js"></script>
+</body>
+</html>
