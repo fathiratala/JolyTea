@@ -414,3 +414,19 @@ details.notes textarea { margin-top: .6rem; }
 .aligncenter { margin-inline: auto; }
 .wp-caption-text { font-size: .85rem; color: var(--muted); }
 .pay-card .qr-img { margin-inline: auto; }
+
+/* ---------- Detail produk: pilihan & galeri ---------- */
+.gallery .thumbs{display:flex;gap:.6rem;margin-top:.8rem;flex-wrap:wrap}
+.thumb-btn{border:2px solid transparent;border-radius:12px;padding:0;background:none;cursor:pointer;overflow:hidden;width:72px;height:72px}
+.thumb-btn img{width:100%;height:100%;object-fit:cover;display:block}
+.thumb-btn.on{border-color:var(--accent,#b05a30)}
+.opt{margin:1.2rem 0}
+.opt h3{font-size:.95rem;margin:0 0 .5rem}
+.chips{display:flex;flex-wrap:wrap;gap:.6rem}
+.chip{position:relative;cursor:pointer}
+.chip input{position:absolute;opacity:0;pointer-events:none}
+.chip span{display:flex;flex-direction:column;align-items:center;gap:2px;min-width:110px;padding:.7rem 1rem;border:1.5px solid #e6d3c4;border-radius:12px;background:#fff;font-weight:600;text-align:center}
+.chip small{font-weight:500;color:var(--muted,#7b6757)}
+.chip input:checked + span{border-color:var(--accent,#b05a30);background:#fbeee4;color:#7a3a1e}
+.chip input:focus-visible + span{outline:2px solid var(--accent,#b05a30);outline-offset:2px}
+.chip-check span{flex-direction:row;min-width:0;gap:.5rem}

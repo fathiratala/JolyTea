@@ -1,11 +1,14 @@
-# Joly Tea — versi HTML statis
+# Joly Tea — versi HTML statis (v2)
 
-Halaman: Home (index.html), Menu, About, Riwayat Transaksi, Profil, plus Login, Register, Keranjang, Checkout.
+Halaman: Home, Menu, About, Riwayat Transaksi, Profil, Produk (detail + pilihan), Keranjang, Checkout, Login, Register.
 
-- Tidak butuh server/PHP: buka `index.html` langsung di browser, atau deploy ke Vercel.
-- Akun, keranjang, dan pesanan DISIMULASIKAN di localStorage browser (tidak ada pesanan nyata).
+Menu & harga:
+- Thai Tea: 250 ml Rp10.000 | 1.000 ml Rp37.000
+- Roasted Milk Tea: 250 ml Rp13.000 | 1.000 ml Rp48.000
+- Earl Grey Milk Tea: 250 ml Rp15.000 | 1.000 ml Rp50.000
+- Opsi: Cup + Ice (+Rp1.000), gula: Less sugar / Normal sugar
 
-## Deploy ke Vercel
-1. Upload isi folder ini ke repository GitHub (atau pakai Vercel CLI: `vercel --prod` dari folder ini).
-2. Vercel > Add New > Project > pilih repo > Framework Preset: **Other** > Deploy.
-   (Build Command & Output Directory dikosongkan; root = folder ini.)
+Ganti foto Earl Grey: timpa `img/products/earl-grey-milk-tea.jpg` dengan foto aslimu (nama file harus sama).
+Galeri: tambahkan path foto di `gallery` pada data PRODUCTS di `js/app.js`.
+
+Data akun, keranjang, dan pesanan disimulasikan di localStorage browser.
